@@ -1,4 +1,5 @@
-input_text = open("input.txt", "r").read()
+with open("input.txt", "r") as input:
+    input_text = input.read()
 input_list = input_text.split("\n")
 a = "rock"
 b = "paper"
