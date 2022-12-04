@@ -6,8 +6,8 @@ input_list = input_text.split("\n")
 duplicates = []
 for x in input_list:
     firstpart, secondpart = x[:len(x)//2], x[len(x)//2:]
-    for number1, duplicate1 in enumerate(firstpart):
-            for number2, duplicate2 in enumerate(secondpart):
+    for duplicate1 in firstpart:
+            for duplicate2 in secondpart:
                 if duplicate1 == duplicate2:
                     duplicates.append(duplicate1)
                     break
