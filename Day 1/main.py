@@ -7,7 +7,7 @@ for i in input_list:
         result.append([])
     else:
         result[-1].append(int(i))
-print(result)
+# print(result)
 s = []
 for summary in result:
     s.append(sum(summary))
